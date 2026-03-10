@@ -24,7 +24,7 @@ jobs:
           context: .
           push: true
           tags: |
-           ${{ vars.DOCKERHUB_USER }}/${{ github.repository }}:${{github.ref}}
+           ${{ vars.DOCKERHUB_USER }}/${{ github.repository }}:${{github.ref_name}}
            ${{ vars.DOCKERHUB_USER }}/${{ github.repository }}:${{github.sha}}
            ${{ vars.DOCKERHUB_USER }}/${{ github.repository }}:latest
 
